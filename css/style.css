@@ -57,6 +57,8 @@ ul, ol{
     padding-right: 16px;
 }
 
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+
 /*==============================MOBILE HEADER========================*/
 
 
@@ -101,6 +103,13 @@ ul, ol{
     
 }
 
+.page-header{
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 @media screen and (min-width: 320px) {
     .container{
         width: 320px;
@@ -110,3 +119,208 @@ ul, ol{
 }
 
 /*==============================/MOBILE HEADER========================*/
+
+/*============================MOBILE HERO=============================*/
+.hero{
+    background-color: #2E2F42;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/img-name.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    max-width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
+.hero-button{
+    background: #4D5AE5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.hero-button:hover, .hero-button:focus{
+    background-color: #404BBF;
+}
+
+.hero{
+    width: 100%;
+}
+
+/*============================/MOBILE HERO=============================*/
+
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+
+/*TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+
+@media screen and (min-width: 768px) {
+/*==============================TABLET HEADER========================*/
+    .container{
+        width: 760px;
+    }
+
+    .head-cont{
+        height: 72px;
+    }
+    
+    .page-navigation{
+        display: flex;
+        align-items: center;
+        padding: 24px 0;
+        gap: 120px;
+    }
+
+    .menu-list{
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu-item{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.32px;
+    }
+
+    .menu-link{
+        color: #2e2f42;
+        padding: 24px 0;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .menu-link::after{
+        content: "";
+        position: absolute;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        height: 4px;
+        background-color: #404BBF;
+        border-radius: 2px;
+        left: 0;
+        bottom: -1px;
+        display: block;
+    }
+    
+    .menu-link:hover::after, .menu-link:focus::after{
+        width: 100%;
+    }
+    
+    .main-address{
+        display: block;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.48px;
+    }
+    
+    .main-address-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .main-address-link{
+        color: #434455; 
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .main-address-link:hover, .main-address-link:focus{
+        color: #404bbf;
+    }
+    
+    .mobile-menu-btn{
+        display: none;
+    }
+/*==============================TABLET HEADER========================*/
+
+
+/*==============================TABLET HERO========================*/
+
+    .hero{
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .hero-title{
+        padding-bottom: 36px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
+    }
+}
+/*==============================TABLET HERO========================*/
+
+
+/*TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+
+/*DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP */
+@media screen and (min-width: 1158px) {
+    .container{
+        width: 1158px;
+    }
+
+/*==============================DESCTOP HEADER========================*/
+    .main-address-list{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .page-navigation{
+        gap: 76px;
+    }
+
+    .main-address{
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.32px;
+    }
+/*==============================DESCTOP HEADER========================*/
+
+/*==============================DESCTOP HERO========================*/
+
+    .hero{
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .hero-title{
+        padding-bottom: 48px;
+    }
+}
+/*==============================DESCTOP HERO========================*/
+
+/*DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP DESCTOP */
