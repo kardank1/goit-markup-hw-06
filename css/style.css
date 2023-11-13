@@ -1,0 +1,112 @@
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;  
+    background-color: #FFFFFF;
+    color: #434455;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/*==============================MOBILE HEADER========================*/
+
+
+
+.head-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #4d5ae5;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    align-content: center;
+}
+
+.logo .logo-web{
+    color: #2E2F42;
+}
+
+.menu-list{
+    display: none;
+}
+
+.main-address{
+    display: none;
+}
+
+.mobile-menu-btn{
+    height: 24px;
+    width: 24px;
+    stroke: #2F2F37;
+    background-color: transparent;
+    border: none;
+    
+}
+
+@media screen and (min-width: 320px) {
+    .container{
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*==============================/MOBILE HEADER========================*/
